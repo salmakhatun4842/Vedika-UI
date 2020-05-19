@@ -7,4 +7,9 @@ stage('Git checkout'){
 stage('npm install'){
   sh label: '', script: 'npm install'
  }
+  stage('build'){
+    sh label: '', script: 'ng build --prod'
+  }
+  
+  
 }
