@@ -10,6 +10,5 @@ stage('npm install'){
   stage('build'){
     sh label: '', script: 'ng build --prod'
   }
-  
-  
+   
 }
